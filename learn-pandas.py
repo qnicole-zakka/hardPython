@@ -7,6 +7,11 @@ cols2 = ['Eleanor', 'Chidi', 'Tahani', 'Jason']
 d2 = np.random.randint(0, 100, (3, 4))
 df2 = pd.DataFrame(data=d2, columns=cols2)
 print(df2)
+
+# a first view of DataFrame
+df2.head()
+df2.describe()
+
 print(df2['Eleanor'][1])
 dft = df2 # reference 
 dftt = df2.copy() # true copy
@@ -15,3 +20,4 @@ df2['Eleanor'][1] *= 2  # modify a cell
 print(df2['Eleanor'][1]) 
 print(dft['Eleanor'][1])
 print(dftt['Eleanor'][1])
+
