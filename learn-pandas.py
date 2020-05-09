@@ -21,3 +21,5 @@ print(df2['Eleanor'][1])
 print(dft['Eleanor'][1])
 print(dftt['Eleanor'][1])
 
+# shuffle rows
+shuffled_df = df.reindex(np.random.permutation(df.index))
