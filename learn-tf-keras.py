@@ -47,3 +47,5 @@ def plot_loss(epochs, rmse):
     plt.plot(epochs, rmse, label='loss')
     plt.legend()
     plt.show()
+
+tf.keras.metrics.AUC/Precision/Recall()
