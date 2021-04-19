@@ -28,3 +28,6 @@ shuffled_df = df.reindex(np.random.permutation(df.index))
 df_mean = df.mean() # mean of all columns
 df_std = df.std()
 df_zscore = (df - df_mean) / df_std
+
+# group by multiple conditions and get the count of each condition match
+df.groupby(['cond1', 'cond2']).size()
